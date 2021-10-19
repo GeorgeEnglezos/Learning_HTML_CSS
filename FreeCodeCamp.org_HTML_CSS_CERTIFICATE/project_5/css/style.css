@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+.container {
+  width: 80%;
+  margin: auto; /** move it to the middle*/
+  overflow: hidden;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(245, 245, 245);
+  position: relative;
+}
+
+/*body*/
+/*Navbar*/
+#navbar-background {
+  z-index: 1;
+  background-color: rgb(168, 48, 48);
+  display: block;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+}
+#navbar {
+  text-align: right;
+  height: inherit;
+  overflow: hidden;
+  padding-right: 15px;
+  border-bottom: 2px rgb(48, 42, 58) solid;
+}
+#navbar a {
+  height: inherit;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  text-decoration: none;
+  font-size: x-large;
+}
+#navbar a:hover {
+  background-color: rgb(90, 76, 109);
+}
+/*About*/
+#about {
+  z-index: 0;
+  top: 4rem;
+  background-image: linear-gradient(50deg, rgb(56, 56, 56), rgb(37, 37, 37));
+  height: 1000px;
+  width: 100%;
+}
+#about .center {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 25%;
+  right: 25%;
+  transform: translate(-25%, -25%);
+}
+#about h1 {
+  min-width: 500px;
+  color: white;
+  text-align: center;
+  font-size: 3.5rem;
+}
+#about h2 {
+  min-width: 500px;
+  color: rgb(141, 55, 55);
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Work*/
+#work {
+  margin: 0;
+  background-color: rgb(32, 70, 114);
+}
+#work h1 {
+  padding-top: 5rem;
+  color: white;
+  font-size: 2.1rem;
+  text-align: center;
+}
+#work hr {
+  margin: auto;
+  align-items: center;
+  width: 34rem;
+  margin-bottom: 1.5rem;
+}
+
+#work .flex-container {
+  margin: auto;
+  width: 95%;
+  overflow: hidden;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+#work .block {
+  display: block;
+}
+#work .block a {
+  text-decoration: none;
+}
+#work .block p {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  background-color: rgb(47, 47, 47);
+  color: white;
+  font-size: larger;
+}
+#work .block img {
+  display: block;
+  width: 400px;
+}
+
+#work #button {
+  display: block;
+  padding: 3rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: auto;
+  text-align: center;
+}
+#work #button a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  background: darkslategray;
+  font-size: large;
+  font-weight: bold;
+}
+/*Contact*/
+#contact {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  border-top: 3px rgb(168, 48, 48) solid;
+  background: rgb(29, 29, 29);
+}
+#contact .center {
+  margin: auto;
+  width: 90%;
+  text-align: center;
+}
+#contact h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+#contact em {
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  color: rgb(161, 161, 161);
+}
+#contact a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+/*footer*/
+footer {
+  border-top: 3px rgb(168, 48, 48) solid;
+  padding: 2.45rem;
+  background: rgb(29, 29, 29);
+  display: grid;
+  grid-template-columns: 7.5fr 2.5fr;
+}
+footer p {
+  color: white;
+  font-size: larger;
+  line-height: 25px;
+}
+@media screen and (max-width: 600px) {
+  #work .flex-container {
+    /*Shrink*/
+  }
+}
