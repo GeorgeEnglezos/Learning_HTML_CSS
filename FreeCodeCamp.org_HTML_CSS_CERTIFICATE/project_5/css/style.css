@@ -10,6 +10,7 @@
   overflow: hidden;
 }
 body {
+  margin: auto;
   font-family: Arial, Helvetica, sans-serif;
   background: rgb(245, 245, 245);
   position: relative;
@@ -45,14 +46,14 @@ body {
   background-color: rgb(90, 76, 109);
 }
 /*About*/
-#about {
+#welcome-section {
   z-index: 0;
   top: 4rem;
   background-image: linear-gradient(50deg, rgb(56, 56, 56), rgb(37, 37, 37));
-  height: 1000px;
+  height: 100vh;
   width: 100%;
 }
-#about .center {
+#welcome-section .center {
   display: block;
   position: relative;
   top: 50%;
@@ -60,13 +61,13 @@ body {
   right: 25%;
   transform: translate(-25%, -25%);
 }
-#about h1 {
+#welcome-section h1 {
   min-width: 500px;
   color: white;
   text-align: center;
   font-size: 3.5rem;
 }
-#about h2 {
+#welcome-section h2 {
   min-width: 500px;
   color: rgb(141, 55, 55);
   text-align: center;
@@ -76,26 +77,25 @@ body {
 }
 
 /*Work*/
-#work {
-  margin: 0;
+#projects {
   background-color: rgb(32, 70, 114);
 }
-#work h1 {
+#projects h1 {
   padding-top: 5rem;
   color: white;
   font-size: 2.1rem;
   text-align: center;
 }
-#work hr {
+#projects hr {
   margin: auto;
   align-items: center;
   width: 34rem;
   margin-bottom: 1.5rem;
 }
 
-#work .flex-container {
+#projects .flex-container {
   margin: auto;
-  width: 95%;
+  width: 80%;
   overflow: hidden;
   padding-top: 20px;
   display: flex;
@@ -103,13 +103,13 @@ body {
   justify-content: center;
   gap: 2.5rem;
 }
-#work .block {
+#projects .project-tile {
   display: block;
 }
-#work .block a {
+#projects .project-tile a {
   text-decoration: none;
 }
-#work .block p {
+#projects .project-tile p {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   text-align: center;
@@ -117,12 +117,12 @@ body {
   color: white;
   font-size: larger;
 }
-#work .block img {
+#projects .project-tile img {
   display: block;
   width: 400px;
 }
 
-#work #button {
+#projects #button {
   display: block;
   padding: 3rem;
   margin-top: 20px;
@@ -130,7 +130,7 @@ body {
   margin: auto;
   text-align: center;
 }
-#work #button a {
+#projects #button a {
   color: white;
   padding: 1rem;
   text-decoration: none;
@@ -140,6 +140,7 @@ body {
 }
 /*Contact*/
 #contact {
+  height: 100vh;
   padding-top: 20rem;
   padding-bottom: 20rem;
   border-top: 3px rgb(168, 48, 48) solid;
@@ -181,7 +182,10 @@ footer p {
   line-height: 25px;
 }
 @media screen and (max-width: 600px) {
-  #work .flex-container {
-    /*Shrink*/
+  #projects .flex-container .block {
+    display: block;
+  }
+  footer {
+    display: block;
   }
 }
